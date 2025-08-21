@@ -1,4 +1,4 @@
-Tic Tac Toe (XML + Java, Android Studio).
+Tic Tac Toe (XML + Java, Android Studio) :-     
 Developed a Tic Tac Toe Android game application using Java for backend logic and XML for UI design.
 Implemented two-player functionality with dynamic turn switching and winner/loser detection.
 Designed a responsive UI with XML layouts, ensuring compatibility across multiple Android devices.
