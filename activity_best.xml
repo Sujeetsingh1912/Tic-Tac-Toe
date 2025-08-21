@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tic Tac Toe"
+        android:layout_centerHorizontal="true"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#CCF60606"
+        android:fontFamily="cursive"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/layout_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/texttitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/player1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Player-1 Score"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/player2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Player-2 Score"
+            android:fontFamily="@font/akaya_telivigala"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/player1"
+            android:textColor="@color/black"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/score_player1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:fontFamily="@font/akaya_telivigala"
+            android:textSize="26dp"
+            android:layout_below="@+id/player1"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/score_player2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:fontFamily="@font/akaya_telivigala"
+            android:textSize="26dp"
+            android:layout_below="@+id/player2"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/score_player1"
+            android:textColor="@color/black"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layout_relative">
+
+        <!-- Row 1 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="24sp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="2dp"/>
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="24sp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="2dp"/>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="24sp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="2dp"/>
+        </LinearLayout>
+
+        <!-- Row 2 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="24sp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="2dp"/>
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="24sp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="2dp"/>
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="24sp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="2dp"/>
+        </LinearLayout>
+
+        <!-- Row 3 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="24sp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="2dp"/>
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="24sp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="2dp"/>
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="24sp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="26sp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Status"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/Play_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status"
+        android:layout_centerHorizontal="true"
+        android:text="Play Again"
+        android:textSize="20sp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:backgroundTint="#ffbb00"/>
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Play_again"
+        android:layout_centerHorizontal="true"
+        android:text="Reset Game"
+        android:textSize="20sp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:backgroundTint="#DE1129"/>
+</RelativeLayout>
